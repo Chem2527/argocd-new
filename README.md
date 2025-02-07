@@ -1,18 +1,18 @@
-## GitOps Tools: ArgoCD
+## GitOps Tool: ArgoCD
 
 ArgoCD is a GitOps tool designed to keep Kubernetes clusters synchronized with Git repositories.
 
-Key Components of ArgoCD:
+## Key Components of ArgoCD:
 
-VCS: Connects to Git repositories and retrieves the desired state.
+**VCS**: Connects to Git repositories and retrieves the desired state.
 
-Application Controller: Runs inside the Kubernetes cluster and compares the current state of deployed resources to the desired state defined in Git.
+**Application Controller**: Runs inside the Kubernetes cluster and compares the current state of deployed resources to the desired state defined in Git.
 
-API Service: Provides authentication and UI/CLI access to interact with ArgoCD.
+**API Service**: Provides authentication and UI/CLI access to interact with ArgoCD.
 
-Redis: Caches data to improve performance and handle state restoration after crashes.
+**Redis**: Caches data to improve performance and handle state restoration after crashes.
 
-Dex: Provides SSO (Single Sign-On) capabilities for authentication.
+**Dex**: Provides SSO (Single Sign-On) capabilities for authentication.
 
 ## ArgoCD Installation
 ```bash
