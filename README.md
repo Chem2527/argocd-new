@@ -116,8 +116,9 @@ Create AKS Cluster:
 
 ```bash
 az aks create --resource-group <Resource-Group-Name> --name <AKS-Cluster-Name> --node-count 1 --enable-addons monitoring --generate-ssh-keys
-Login to AKS Cluster:
+```
 
+## Login to AKS Cluster:
 ```bash
 az aks get-credentials --resource-group <Resource-Group-Name> --name <AKS-Cluster-Name>
 ```
