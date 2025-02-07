@@ -118,9 +118,26 @@ Create AKS Cluster:
 az aks create --resource-group <Resource-Group-Name> --name <AKS-Cluster-Name> --node-count 1 --enable-addons monitoring --generate-ssh-keys
 ```
 
-## Login to AKS Cluster:
+## Login to AKS Cluster and cluster related steps:
 ```bash
 az aks get-credentials --resource-group <Resource-Group-Name> --name <AKS-Cluster-Name>
+kubectl get secrets -n argocd
+kubectl edit secret argocd-initial-admin-secret -n argocd
+kubectl get pods -n argocd -w
+kubectl get pods
+kubectl get pods -n argocd
+kubectl get svc -n argocd
+kubectl edit svc argocd-redis -n argocd
+kubectl get svc -n argocd
+kubectl get svc -n argocd
+kubectl edit svc argocd-redis -n argocd
+kubectl get svc -n argocd
+kubectl edit svc argocd-server -n argocd
+kubectl get svc -n argocd
+kubectl get nodes -o wide
+kubectl edit svc argocd-server -n argocd
+kubectl get svc -n argocd
+
 ```
 Install ArgoCD in the Kubernetes cluster:
 
